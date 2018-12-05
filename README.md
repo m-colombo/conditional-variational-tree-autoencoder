@@ -1,3 +1,26 @@
-# COMING SOON
-## conditional-variational-tree-autoencoder
-Efficient TensorFlow implementation of a conditional variational autoencoder working with tree structured data 
+
+# Conditional Variational Autoencoder for Tree-Structured Data
+
+The implementation developed along with my Master Thesis in Computer Science.
+
+Citing the abstract:
+>The thesis deals with the design of a deep learning model that can learn a generative process realizing unconstrained tree transductions. The model is based on an extension of the popular Variational Autoencoder framework to allow conditioning the generative process on tree-structured inputs and to generate tree-structured predictions. An efficient Tensor- Flow implementation of the proposed model has been realized and vali- dated on Arithmetic Expression trees and Neural Machine Translation.
+
+For more details about the abstract model architecture and the main implementation choice see the full work [here](thesis.pdf) 
+
+## Code Structure
+
+- `tree/` contains the core support classes to handle trees
+    - `batch`: classes supporting the tree storage for batched computations
+    - `definition`: basic definitions needed to characterized the tree domain at hand
+    - `simple_expression`: some tree characterizations of simple arithmetic expression tree domains
+- `tree_encoder`, `tree_decoder`: core components implementing the tree computations
+- `vae`: variational autoencoder implementation
+- `benchmark\`, `data\`, `experiments\`: code used for the experiments, to run benchmark and preprocess data
+
+## How To
+See [`experiments/exp.py`](experiments/exp.py) for an example on how to run experiments.
+
+Although this is the code used to run the experiments there might be some inconsistencies and undocumented facets. This is intended to be a reference implementation, possibly out of this an ad hoc library might be refactored some time in the future.
+
+If you are willing to use this implementation and you need some clarifications, you'd like to have a clean library or you're just curious about something feel free to contact me opening an issue.
