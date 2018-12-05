@@ -19,8 +19,12 @@ For more details about the abstract model architecture and the main implementati
 - `benchmark\`, `data\`, `experiments\`: code used for the experiments, to run benchmark and preprocess data
 
 ## How To
-See [`experiments/exp.py`](experiments/exp.py) for an example on how to run experiments.
+See [`src/experiments/exp.py`](src/experiments/exp.py) for an example on how to run experiments.
 
 Although this is the code used to run the experiments there might be some inconsistencies and undocumented facets. This is intended to be a reference implementation, possibly out of this an ad hoc library might be refactored some time in the future.
 
 If you are willing to use this implementation and you need some clarifications, you'd like to have a clean library or you're just curious about something feel free to contact me opening an issue.
+
+## Run Environments
+The implementation have been tested with Tensorflow versions 1.11 and 1.12. In the variants GPU, CPU and CPU-MKL. 
+As run environments we tested Ubuntu, Centos, MacOS X and Docker on all of them.
