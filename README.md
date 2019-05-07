@@ -6,7 +6,10 @@ The implementation developed along with my Master Thesis in Computer Science.
 Citing the abstract:
 >The thesis deals with the design of a deep learning model that can learn a generative process realizing unconstrained tree transductions. The model is based on an extension of the popular Variational Autoencoder framework to allow conditioning the generative process on tree-structured inputs and to generate tree-structured predictions. An efficient Tensor- Flow implementation of the proposed model has been realized and vali- dated on Arithmetic Expression trees and Neural Machine Translation.
 
-For more details about the abstract model architecture and the main implementation choice see the full work [here](thesis.pdf) 
+For more details about the abstract model architecture and the main implementation choices see the full work [here](thesis.pdf) 
+
+## Tensorflow Trees
+Out of this work a library to deal with tree structured data have been refactored, see [m-colombo/tf_tree](https://github.com/m-colombo/tf_tree)
 
 ## Code Structure
 
